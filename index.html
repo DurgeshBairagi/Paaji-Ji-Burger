@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paji Ka Burger | Neemuch</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #111;
+      color: #fff;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 50px;
+      background: #000;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h2 {
+      color: #ffcc00;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1550547660-d9450f859349');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      animation: fadeIn 2s ease;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #ffcc00;
+    }
+
+    .hero p {
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px 10px 0 0;
+      border-radius: 25px;
+      background: #ff0000;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffcc00;
+      color: #000;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 50px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #ffcc00;
+      margin-bottom: 30px;
+    }
+
+    /* Menu */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #222;
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Reviews */
+    .reviews {
+      display: grid;
+      gap: 20px;
+    }
+
+    .review {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Contact */
+    iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2>Paji Ka Burger 🍔</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Best Burgers in Neemuch 🍔</h1>
+    <p>Delicious, juicy & affordable fast food loved by everyone!</p>
+    <a href="tel:9588276252" class="btn">Call Now</a>
+    <a href="#menu" class="btn">Order Now</a>
+  </div>
+</div>
+
+<!-- About -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>Paji Ka Burger is one of the most loved fast food spots in Neemuch. Known for its tasty burgers, quick service, and pocket-friendly prices, it's the perfect place for friends, families, and kids to enjoy delicious meals.</p>
+</section>
+
+<!-- Menu -->
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-grid">
+    <div class="card">
+      <h3>Veg Burger</h3>
+      <p>₹50</p>
+    </div>
+    <div class="card">
+      <h3>Cheese Burger</h3>
+      <p>₹80</p>
+    </div>
+    <div class="card">
+      <h3>French Fries</h3>
+      <p>₹60</p>
+    </div>
+    <div class="card">
+      <h3>Cold Drink</h3>
+      <p>₹40</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d">
+    <img src="https://images.unsplash.com/photo-1606755962773-d324e2dbad45">
+  </div>
+</section>
+
+<!-- Reviews -->
+<section>
+  <h2>Customer Reviews ⭐ 4.4</h2>
+  <div class="reviews">
+    <div class="review">“Best burger taste in Neemuch!”</div>
+    <div class="review">“Affordable and tasty food ❤️”</div>
+    <div class="review">“Great place for friends hangout.”</div>
+    <div class="review">“Fast service and delicious snacks.”</div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>CRPF Rd, Neemuch Chawni, Neemuch</p>
+  <p>Phone: 095882 76252</p>
+
+  <iframe src="https://maps.google.com/maps?q=Neemuch&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+  <br><br>
+  <a href="tel:9588276252" class="btn">Call Now</a>
+</section>
+
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/919588276252">💬</a>
+
+<script>
+  // Simple Scroll Animation
+  window.addEventListener("scroll", () => {
+    document.querySelectorAll("section").forEach(sec => {
+      const pos = sec.getBoundingClientRect().top;
+      if (pos < window.innerHeight - 100) {
+        sec.style.opacity = 1;
+        sec.style.transform = "translateY(0)";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
